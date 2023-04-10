@@ -6,14 +6,37 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
+import MeanSection from './Component/MeanSection/MeanSection';
+import Statistics from './Component/Statistics/Statistics';
+import Appliedjobs from './Component/Appliedjobs/Appliedjobs';
+import Blog from './Component/Blog/Blog';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    children:[
+      {
+        path:"/",
+        element: <MeanSection></MeanSection>,
+        loader: () => fetch('Job.json')
+      },
+      {
+        path:"/statistics",
+        element:<Statistics></Statistics>
+      },
+      {
+        path:"/appliedjobs",
+        element: <Appliedjobs></Appliedjobs>
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>
+      }
+    ]
   },
 ]);
 
