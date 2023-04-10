@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Job from '../Job/Job';
+import Jobcatagory from '../JobCatagory/Jobcatagory';
 
 const MeanSection = () => {
     const job = useLoaderData();
+    const [jobcatagory , setJobcatagory] = useState([])
+
+    useEffect( () => {
+        fetch('Jobcategory.json')
+        .then(res => res.json())
+        .then(data => setJobcatagory(data))
+    })
 
     return (
 
         <div>
+
             <section>
-                <div className='flex mx-40 mt-20'>
+                <div className='mx-40 mt-20 grid md:grid-cols-2'>
                     <div>
                         <h1 className='font-bold text-5xl'>One Step</h1>
                         <h1 className='font-bold text-5xl mt-4'>Closer To Your</h1>
@@ -23,37 +32,20 @@ const MeanSection = () => {
                 </div>
             </section>
 
-            <section>
-                <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-9'>Job Category List</h2>
+            <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-20'>Job Category List</h2>
 
-                <div className='grid grid-cols-4 mx-32 mt-20 mb-40 gap-10'>
-                    <div className='bg-gray-200 rounded p-5'>
-                        <img src="/src/assets/Icons/accounts 1.png" alt="" />
-                        <h2 className='font-semibold text-2xl mt-5'>Account & Finance</h2>
-                        <p>300 Jobs Available</p>
-                    </div>
-                    <div className='bg-gray-200 rounded p-5'>
-                        <img src="/src/assets/Icons/accounts 1.png" alt="" />
-                        <h2 className='font-semibold text-2xl mt-5'>Account & Finance</h2>
-                        <p>300 Jobs Available</p>
-                    </div>
-                    <div className='bg-gray-200 rounded p-5'>
-                        <img src="/src/assets/Icons/accounts 1.png" alt="" />
-                        <h2 className='font-semibold text-2xl mt-5'>Account & Finance</h2>
-                        <p>300 Jobs Available</p>
-                    </div>
-                    <div className='bg-gray-200 rounded p-5'>
-                        <img src="/src/assets/Icons/accounts 1.png" alt="" />
-                        <h2 className='font-semibold text-2xl mt-5'>Account & Finance</h2>
-                        <p>300 Jobs Available</p>
-                    </div>
-                </div>
+           <div className='grid md:grid-cols-4 grid-cols-2'>
+            {
+                jobcatagory.map(jobcatagory => <Jobcatagory
+                    key={jobcatagory.id}
+                    jobcatagory={jobcatagory}
+                ></Jobcatagory>)
+            }
+           </div>
 
-                <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-9'>Featured Jobs</h2>
-            </section>
+            <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-9'>Featured Jobs</h2>
 
-
-            <div className='grid grid-cols-2'>
+            <div className='grid md:grid-cols-2 mb-20'>
                 {
                     job.map(job => <Job
                         key={job.id}

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "category": "Account & Finance",
+        "job": "300+ Jobs Available",
+        "img": "/src/assets/Icons/business 1.png"
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "category": "Creative Design",
+        "job": "100+ Jobs Available",
+        "img": "/src/assets/Icons/accounts 1.png"
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "category": "Marketing & Sales",
+        "job": "150+ Jobs Available",
+        "img":"/src/assets/Icons/chip 1.png"
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "category": "Engineering Job",
+        "job": "224+ Jobs Available",
+        "img": "/src/assets/Icons/social-media 1.png"
+
+    }
+]
