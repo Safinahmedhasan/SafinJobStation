@@ -11,7 +11,6 @@ import MeanSection from './Component/MeanSection/MeanSection';
 import Statistics from './Component/Statistics/Statistics';
 import Appliedjobs from './Component/Appliedjobs/Appliedjobs';
 import Blog from './Component/Blog/Blog';
-import Jobcatagory from './Component/JobCatagory/Jobcatagory';
 import Jobdetails from './Component/JobDetails/Jobdetails';
 
 
@@ -24,11 +23,13 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <MeanSection></MeanSection>,
-        loader: () => fetch('Job.json'),
+        loader: () => fetch('/Job.json'),
       },
       {
-        path:"/Jobdetails",
-        element: <Jobdetails></Jobdetails>
+        path:"/:jobId",
+        element: <Jobdetails></Jobdetails>,
+        loader: ({params}) => fetch("/Job.json")
+  
       },
       {
         path:"/statistics",

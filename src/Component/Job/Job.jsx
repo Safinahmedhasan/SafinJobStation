@@ -21,7 +21,7 @@ shadow-xl '>
                 <p className='py-2'><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
                 <p><FontAwesomeIcon icon={faDollarSign} /> Salary : {salary}</p>
 
-                <Link to={'/Jobdetails'}> <button className='text-white mt-5 bg-gradient-to-r from-indigo-600 to-blue-500 p-3 rounded w-3/12 text-center my-2'>View Details</button></Link>  
+                <Link to={`${id}`}> <button className='text-white mt-5 bg-gradient-to-r from-indigo-600 to-blue-500 p-3 rounded w-3/12 text-center my-2'>View Details</button></Link>  
             </section>
         </div>
     );
