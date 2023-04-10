@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Job = ({ job }) => {
 
@@ -20,8 +21,7 @@ shadow-xl '>
                 <p className='py-2'><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
                 <p><FontAwesomeIcon icon={faDollarSign} /> Salary : {salary}</p>
 
-                <button className='text-white mt-5 bg-gradient-to-r from-indigo-600 to-blue-500 p-3 rounded w-3/12 text-center my-2'>View Details</button>
-
+                <Link to={'/Jobdetails'}> <button className='text-white mt-5 bg-gradient-to-r from-indigo-600 to-blue-500 p-3 rounded w-3/12 text-center my-2'>View Details</button></Link>  
             </section>
         </div>
     );
