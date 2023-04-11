@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarCheck, faDollarSign, faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import Appliedjobs from '../Appliedjobs/Appliedjobs';
 import { addToDb, getShoppingCart } from '../../Utilities/fakedb';
+import { toast } from 'react-hot-toast';
 const Jobdetails = () => {
 
     const [jobs, setJobs] = useState([]);
@@ -19,12 +20,6 @@ const Jobdetails = () => {
     }, []);
 
 
-    useEffect(()=>{
-        const JobApply = getShoppingCart();
-        console.log(JobApply)
-    },[])
-
-
     // const storeJobData = jobs?.filter((job) => job.id === jobId); 
     const storeJobData = jobsSingleData.filter((job) => job.id === jobId);
 
@@ -37,20 +32,13 @@ const Jobdetails = () => {
         setJobAdd(newJob);
         addToDb(storeJobData.id);
         // console.log(newJob)
+        toast.success("Job Added is list 😊")
     }
 
     return (
 
 
         <div>
-
-
-
-            <div>
-                <Appliedjobs jobAdd={jobAdd}></Appliedjobs>
-            </div>
-
-
             <div className='bg-slate-100 relative h-64'>
                 <h2 className='font-extrabold text-3xl text-[#1A1919] pt-20 text-center'>Job Details</h2>
                 <img className=' absolute ml-20 mt-[-80px]' src="/src/assets/All Images/Vector.png" alt="" />
@@ -90,9 +78,6 @@ const Jobdetails = () => {
                     </div>
                 </div>
             </div>
-
-
-
 
 
         </div>
