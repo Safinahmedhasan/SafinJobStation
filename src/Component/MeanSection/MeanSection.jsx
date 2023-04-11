@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Job from '../Job/Job';
 import Jobcatagory from '../JobCatagory/Jobcatagory';
+import './MeanSection.css'
 
 const MeanSection = () => {
     const job = useLoaderData();
     const [jobcatagory , setJobcatagory] = useState([])
+
+    const [data , setData] = useState(false)
 
     useEffect( () => {
         fetch('Jobcategory.json')
@@ -49,12 +52,17 @@ const MeanSection = () => {
 
             <div className='grid md:grid-cols-2 mb-20'>
                 {
-                    job.map(job => <Job
+                    job.slice(0,data? data.length : 4 ) .map(job => <Job
                         key={job.id}
                         job={job}
                     ></Job>)
                 }
             </div>
+
+            <div className='container'>
+                <button onClick={() => setData(!data)} className={`${data? 'disAble-btn' : 'featured-job-btn'}`}>See All Jobs</button>
+            </div>
+
         </div>
     );
 };

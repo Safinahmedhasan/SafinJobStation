@@ -13,6 +13,7 @@ const Appliedjobs = () => {
                     <h2 className='font-extrabold text-3xl text-[#1A1919] pt-20 text-center'>Applied Jobs</h2>
                     <img className=' absolute ml-20 mt-[-80px]' src="/src/assets/All Images/Vector.png" alt="" />
                     <img className=' absolute ml-[1100px] z-10 mt-[-250px] ' src="/src/assets/All Images/Vector-1.png" alt="" />
+                    <div className='ml-[960px] mt-[150px]'>Filter</div>
                 </div>
                 {
                     job.map(jobadd => <ApplyJob
