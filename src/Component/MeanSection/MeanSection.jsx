@@ -17,7 +17,7 @@ const MeanSection = () => {
 
         <div>
 
-            <section>
+            <section className='bg-slate-100 p-5'>
                 <div className='mx-40 mt-20 grid md:grid-cols-2'>
                     <div>
                         <h1 className='font-bold text-5xl'>One Step</h1>
@@ -32,7 +32,8 @@ const MeanSection = () => {
                 </div>
             </section>
 
-            <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-20'>Job Category List</h2>
+            <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-5'>Job Category List</h2>
+            <p className='text-center mb-20'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
            <div className='grid md:grid-cols-4 grid-cols-2'>
             {
@@ -43,7 +44,8 @@ const MeanSection = () => {
             }
            </div>
 
-            <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-9'>Featured Jobs</h2>
+            <h2 className='font-extrabold text-5xl text-[#1A1919] text-center mt-24 mb-5'>Featured Jobs</h2>
+            <p className='text-center mb-20'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
             <div className='grid md:grid-cols-2 mb-20'>
                 {
@@ -53,7 +55,6 @@ const MeanSection = () => {
                     ></Job>)
                 }
             </div>
-
         </div>
     );
 };

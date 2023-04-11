@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Appliedjobs = () => {
+const Appliedjobs = ({jobAdd}) => {
+
+    console.log(jobAdd)
     return (
         <div>
-            <h2>This is appliedjobs</h2>
+            
+            <h2>hasan{jobAdd.length}</h2>
         </div>
     );
 };
