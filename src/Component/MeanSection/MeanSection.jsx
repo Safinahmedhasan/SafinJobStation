@@ -30,7 +30,7 @@ const MeanSection = () => {
                         <button className='border rounded-xl p-3 mt-7 mb-7 bg-indigo-500 text-white font-semibold'>Get Started</button>
                     </div>
                     <div >
-                        <img src="/src/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+                        <img src="https://ibb.co/nksZbqm" alt="" />
                     </div>
                 </div>
             </section>
