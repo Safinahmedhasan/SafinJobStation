@@ -9,4 +9,4 @@
 
 ## Live Link
 
-Hosted in Netlify -> [SafinJobStation]
+Hosted in Netlify -> [https://velvety-torrone-7f677f.netlify.app]
