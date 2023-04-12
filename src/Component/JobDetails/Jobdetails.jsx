@@ -36,13 +36,13 @@ const Jobdetails = () => {
     }
 
     return (
-
+        
 
         <div>
             <div className='bg-slate-100 relative h-64'>
                 <h2 className='font-extrabold text-3xl text-[#1A1919] pt-20 text-center'>Job Details</h2>
-                <img className=' absolute ml-20 mt-[-80px]' src="https://ibb.co/4gKtyx9" alt="" />
-                <img className=' absolute ml-[1100px] z-10 mt-[-250px] ' src="https://ibb.co/dtNHY4k" alt="" />
+                <img className=' absolute ml-20 mt-[-80px]' src="https://i.ibb.co/2YWh2Bm/Vector.png" alt="" />
+                <img className=' absolute ml-[1100px] z-10 mt-[-250px] ' src="https://i.ibb.co/sCTXY9s/Vector-1.png" alt="" />
             </div>
 
 
