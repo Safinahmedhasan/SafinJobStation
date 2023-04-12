@@ -14,6 +14,7 @@ import Jobdetails from './Component/JobDetails/Jobdetails';
 import jobLoader from './JobLoader/JobLoader';
 import { Toaster } from 'react-hot-toast';
 import Error from './Component/Error/Error';
+import Statistic from './Component/Statistic/Statistic';
 
 
 
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
+        element: <Statistic></Statistic>
       },
       {
         path: "/appliedjobs",

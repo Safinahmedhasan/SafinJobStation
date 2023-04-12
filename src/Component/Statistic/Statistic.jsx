@@ -19,12 +19,12 @@ const Statistic = () => {
     const marks = [
         {
             assignment: "assignment 1",
-            mark: 60
+            mark: 57
         },
         {
             assignment: "assignment 2",
             assignmentNo: 2,
-            mark: 56
+            mark: 60
         },
         {
             assignment: "assignment 3",
@@ -32,15 +32,15 @@ const Statistic = () => {
         },
         {
             assignment: "assignment 4",
-            mark: 60
+            mark: 48
         },
         {
             assignment: "assignment 5",
-            mark: 60
+            mark: 55
         },
         {
             assignment: "assignment 6",
-            mark: 60
+            mark: 55
         },
         {
             assignmentNo: 7,
@@ -48,7 +48,7 @@ const Statistic = () => {
         },
         {
             assignment: "assignment 8",
-            mark: 29
+            mark: 56
         }
     ]
 
@@ -56,7 +56,7 @@ const Statistic = () => {
 
     return (
         <div className='rechart-container'>
-            <h2 className='rechart-title'>Data Composed Chart</h2>
+            <h2 className='rechart-title'>Assignment Mark Charts</h2>
 
             <div>
                 <ComposedChart
