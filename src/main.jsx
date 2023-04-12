@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 import Home from './Component/Home/Home';
 import MeanSection from './Component/MeanSection/MeanSection';
-import Statistics from './Component/Statistics/Statistics';
 import Appliedjobs from './Component/Appliedjobs/Appliedjobs';
 import Blog from './Component/Blog/Blog';
 import Jobdetails from './Component/JobDetails/Jobdetails';
 import jobLoader from './JobLoader/JobLoader';
 import { Toaster } from 'react-hot-toast';
+import Error from './Component/Error/Error';
 
 
 
@@ -35,7 +35,6 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
-        element: <Statistics></Statistics>
       },
       {
         path: "/appliedjobs",
@@ -45,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>
+      },
+      {
+        path:"/*",
+        element: <div>444444</div>
       }
     ]
   },

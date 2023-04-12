@@ -20,7 +20,7 @@ const Header = () => {
                             <span className='ml-72'>{open === true ?  <FontAwesomeIcon icon={faXmark} /> :<FontAwesomeIcon icon={faBars} />}</span>
                         </div>
                         <nav className={`md:flex absolute md:static md:ml-32 md:mt-5 mt-10 ${open ? 'top-6' :'-top-36'}`}>
-                            <Link to="/" className='mr-5'>Home</Link>
+                            <Link to="/" className='mr-5'> Home</Link>
                             <Link to="/statistics" className='mr-5'> Statistics</Link>
                             <Link to="/appliedjobs" className='mr-5'> Applied jobs</Link>
                             <Link to="/blog" className='mr-5'>Blog</Link>

@@ -1,0 +1,14 @@
+.rechart-container {
+    text-align: center;
+}
+
+.rechart-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.rechart {
+    text-align: center;
+    margin: 0 auto;
+}

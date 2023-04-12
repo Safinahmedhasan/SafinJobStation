@@ -24,7 +24,7 @@ shadow-xl '>
                 </div>
 
 
-                <Link to={`${id}`}> <button className='text-white mt-5 bg-gradient-to-r from-indigo-600 to-blue-500 p-3 rounded w-3/12 text-center my-2'>View Details</button></Link>
+                <Link to={`${id}`}> <button className='text-white bg-gradient-to-r from-indigo-600 to-blue-500 p-3 rounded w-3/12 text-center mt-5 my-2'>View Details</button></Link>
             </section>
         </div>
     );
