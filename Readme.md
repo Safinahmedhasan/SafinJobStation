@@ -4,7 +4,9 @@
 - Home page show banner and job category and future jobs section
 - Dynamic add Json File To Job Category List and Logo
 - Json File to Dynamic show By deful for job cart show and see all button clicked to show all job cart
+- Apply job to add job in cart file 
+- 
 
 ## Live Link
 
-Hosted in Netlify -> [https://www.facebook.com/]
+Hosted in Netlify -> [SafinJobStation]
