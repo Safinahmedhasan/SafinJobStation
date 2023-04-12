@@ -1,4 +1,4 @@
-## All Feuture of Job Hunter Project
+## All Feature of SafinJobStation
 
 - Dynamic Navbar for Mobile and Desktop responsive
 - Home page show banner and job category and future jobs section
